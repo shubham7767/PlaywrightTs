@@ -28,3 +28,6 @@ npm-debug.log*
 Thumbs.db
 .idea/
 *.swp
+
+# Local-only notes (not for the public repo)
+INTERVIEW_GUIDE.md

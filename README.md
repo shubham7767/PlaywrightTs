@@ -1,6 +1,6 @@
 # Swag Labs E2E Framework
 
-This project targets Swag Labs (https://www.saucedemo.com) and is designed to be interview-ready.
+A Playwright + TypeScript end-to-end automation framework targeting Swag Labs (https://www.saucedemo.com). It demonstrates a production-style test architecture built around clear separation of concerns, reusable session handling, and maintainable test data.
 
 It uses:
 - Environment-based execution with `.env` files
@@ -353,10 +353,10 @@ npx playwright install --with-deps
 npm run test:uat
 ```
 
-## 15. Interview Pitch (30-60 seconds)
+## 15. Key Implementation Highlights
 
-1. Framework is env-driven using `cross-env` + `dotenv`.
-2. Fixture layer is separated into base and auth for clean architecture.
-3. Auth fixture uses worker-scoped `storageState` for faster authenticated suites.
-4. Test data is centralized in one JSON for maintainability.
-5. POM + hooks + reporting stack make the framework scalable and production-friendly.
+1. Framework is env-driven using `cross-env` + `dotenv`, so the same suite runs against multiple environments.
+2. Fixture layer is separated into base and auth for a clean, scalable architecture.
+3. Auth fixture uses worker-scoped `storageState` to log in once per worker and reuse the session across tests.
+4. Test data is centralized in one JSON file, keeping credentials and product data out of test logic.
+5. POM + hooks + a layered reporting stack (line, HTML, Allure) make the framework maintainable and CI-friendly.
