@@ -1,0 +1,30 @@
+
+# Dependencies
+node_modules/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Allure reporting (generated artifacts)
+/allure-results/
+/allure-report/
+.allure/
+
+# Environment files (do not commit secrets/local config)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+*.swp

@@ -1,0 +1,28 @@
+{
+  "name": "aeautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:stage": "cross-env TEST_ENV=stage playwright test",
+    "test:uat": "cross-env TEST_ENV=uat playwright test",
+    "allure:generate": "allure generate ./allure-results -o ./allure-report --clean",
+    "allure:open": "allure open ./allure-report",
+    "allure:serve": "allure serve ./allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.4",
+    "allure": "^3.10.0",
+    "allure-playwright": "^3.9.0",
+    "cross-env": "^10.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
