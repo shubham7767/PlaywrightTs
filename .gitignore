@@ -31,3 +31,6 @@ Thumbs.db
 
 # Local-only notes (not for the public repo)
 INTERVIEW_GUIDE.md
+
+# Local-only experimental spec (kept locally, excluded from repo)
+tests/amazon.spec.ts
