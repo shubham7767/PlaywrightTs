@@ -1,4 +1,4 @@
-# AEAutomation - Swag Labs E2E Framework
+# Swag Labs E2E Framework
 
 This project targets Swag Labs (https://www.saucedemo.com) and is designed to be interview-ready.
 
@@ -14,8 +14,8 @@ It uses:
 ## 1. Quick Setup (new machine)
 
 ```bash
-git clone <your-repo-url>
-cd AEAutomation
+git clone https://github.com/shubham7767/PlaywrightTs.git
+cd PlaywrightTs
 npm install
 npx playwright install
 ```

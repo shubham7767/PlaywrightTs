@@ -1,11 +1,11 @@
 ---
 name: "Generate Enterprise Playwright Tests"
-description: "Generate enterprise-style Playwright test cases for AEAutomation using the repo's fixtures, page objects, environment config, and data-driven patterns."
+description: "Generate enterprise-style Playwright test cases for this framework using the repo's fixtures, page objects, environment config, and data-driven patterns."
 agent: "enterprise-playwright-test-generator"
 model: "GPT-5 (copilot)"
 argument-hint: "Paste feature details, ACs, auth requirement, inputs, and desired output file."
 ---
-Generate or propose enterprise-style Playwright coverage for AEAutomation.
+Generate or propose enterprise-style Playwright coverage for this framework.
 
 Use the repository patterns from [fixtures/base.fixture.ts](../fixtures/base.fixture.ts), [fixtures/auth.fixture.ts](../fixtures/auth.fixture.ts), [tests/login.spec.ts](../tests/login.spec.ts), and [playwright.config.ts](../playwright.config.ts).
 
