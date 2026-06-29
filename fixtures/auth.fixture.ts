@@ -2,8 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { LoginPage } from '../pages/loginPage';
 import { test as base, expect } from './base.fixture';
-
-const testData = require('../data/authData.json');
+import testData from '../data/authData.json';
 
 type AuthWorkerFixtures = {
   authStorageStatePath: string;

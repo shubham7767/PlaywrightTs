@@ -1,6 +1,5 @@
 import { test, expect } from '../fixtures/auth.fixture';
-
-const testData = require('../data/authData.json');
+import testData from '../data/authData.json';
 
 test.describe('Swag Labs inventory flow', () => {
     test.beforeAll(() => {

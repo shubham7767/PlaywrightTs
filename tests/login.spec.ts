@@ -1,8 +1,5 @@
-declare function require(path: string): any;
-
 import { test, expect } from '../fixtures/base.fixture'
-
-const testData = require('../data/authData.json')
+import testData from '../data/authData.json'
 
 test.describe('Swag Labs login flow', () => {
     // Validate data contract once to fail fast if test data is malformed.

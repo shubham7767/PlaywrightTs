@@ -1,8 +1,5 @@
-declare function require(path: string): any;
-
 import { test, expect } from '../fixtures/auth.fixture';
-
-const testData = require('../data/authData.json');
+import testData from '../data/authData.json';
 
 test.describe('Swag Labs cart flow', () => {
     test.beforeAll(() => {
