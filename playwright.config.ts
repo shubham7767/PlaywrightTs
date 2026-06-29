@@ -7,7 +7,9 @@ const envFile = `.env.${env}`;
 
 const envResult = dotenv.config({ path: envFile });
 
-if (envResult.error) {
+// In CI the .env.* files are gitignored, so BASE_URL is provided as a real env var.
+// Only fail if the file is missing AND no BASE_URL has been supplied another way.
+if (envResult.error && !process.env.BASE_URL) {
   throw envResult.error;
 }
 
